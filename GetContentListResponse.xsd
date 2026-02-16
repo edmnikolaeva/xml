@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           xmlns:soap="http://www.w3.org/2003/05/soap-envelope/"
+           soap:encodingStyle="http://www.w3.org/2003/05/soap-encoding">
+
+  <xs:element name="GetContentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="contentList">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="content">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="contentType" type="xs:string"/>
+                    <xs:element name="contentId" type="xs:integer"/>
+                    <xs:element name="title" type="xs:string"/>
+                    <xs:element name="description" type="xs:string"/>
+                    <xs:element name="imageUrl" type="xs:string"/>
+                    <xs:element name="previewUrl" type="xs:string"/>
+                    <xs:element name="recordUrl" type="xs:string"/>
+                    
+                    <xs:element name="genre">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="genreValue" type="xs:string"/>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+
+                    <xs:element name="recommended" type="xs:boolean"/>
