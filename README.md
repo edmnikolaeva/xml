@@ -78,7 +78,7 @@ The change enables filtering the catalog by exclusive titles to highlight unique
 
 ---
 
-### 🔗 Related Artifacts
+### 🔎 Related Work
 
 - 👉 [JSON](https://github.com/edmnikolaeva/json)  
 - 👉 [REST](https://github.com/edmnikolaeva/rest)
